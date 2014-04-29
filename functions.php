@@ -97,11 +97,4 @@ function custom_submit_text($content) {
 	$content = str_replace($before, $after, $content);
 	return $content;
 }
-
-function exclude_category( $query ) {
-    if ( $query->is_home || $query->is_archive) {
-        $query->set( 'cat', '-3' );
-    }
-}
-add_action( 'pre_get_posts', 'exclude_category' );
 ?>
