@@ -14,7 +14,7 @@ $replace = array('','a');
 echo str_replace( $find, $replace, $cleanermenu );
 ?>
 
-Copyright &copy; 2001-<?php echo date("Y"); ?> <?php echo get_the_author_meta('nickname', 1); ?> <?php echo get_the_author_meta('last_name', 1); ?>
+Copyright &copy; <?php echo date("Y"); ?> <?php echo get_the_author_meta('nickname', 1); ?> <?php echo get_the_author_meta('last_name', 1); ?>
 </p></div>
 
 <?php wp_footer(); ?>
