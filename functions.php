@@ -24,29 +24,6 @@ add_action('do_feed_atom', 'fb_disable_feed', 1);
 add_action('do_feed_rss2_comments', 'fb_disable_feed', 1);
 add_action('do_feed_atom_comments', 'fb_disable_feed', 1);
 
-// Add lightbox to all
-add_filter('the_content', 'my_addlightboxrel');
-function my_addlightboxrel($content) {
-       global $post;
-       $pattern ="/<a(.*?)href=('|\")(.*?).(bmp|gif|jpeg|jpg|png)('|\")(.*?)>/i";
-       $replacement = '<a$1href=$2$3.$4$5 rel="lightbox" title="'.$post->post_title.'"$6>';
-       $content = preg_replace($pattern, $replacement, $content);
-       return $content;
-}
-
-// Password posts custom form
-function my_password_form() {
-    global $post;
-    $label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
-    $o = '<p><form action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" method="post">
-    ' . __( "To view this post, enter the password below:" ) . '
-    <label for="' . $label . '">' . __( "" ) . ' </label><input name="post_password" id="' . $label . '" type="password" size="20" maxlength="20" /><input type="submit" name="Submit" value="' . esc_attr__( "Submit" ) . '" />
-    </form></p>
-    ';
-    return $o;
-}
-add_filter( 'the_password_form', 'my_password_form' );
-
 // Archive columns
 function archivecolumns() {
 	// Grab the archives. Return the output
