@@ -11,76 +11,162 @@ This theme is uncopyrighted, free, and offered as is.
 
 
 body {
-	background: #fff; 
-	font: 18px "Lustria", serif;
-	color: #666;
-    line-height: 30px;
-	}
-	
-h1 {font-size: 1em; color:#333; font-weight:normal;  padding: 20px 0px 0px 0px;}
-h2 {font-size: 1.5em; color:#333; line-height:26px; font-weight:normal; padding: 5px 0px 10px 0px;}
-h3 {font-size: 18px; color:#666; line-height: 15px; text-indent: 0px; padding: 10px 0px 0px 0px;}
-h4 {font-size: 1em; color:#000000;}
-h5 {font-size: 9pt; color:#000000;}
-
-img {border:none;}
-img a {text-decoration: none; border:nones;}
-blockquote {border-left:1px solid #A5ABAB; margin:0px; padding:0 12px 0 12px;}
-
-p {line-height: 30px; margin:30px auto; text-indent: 0px;}
-
-a:link {color: #000; text-decoration: none;}
-a:visited {color: #333; text-decoration: none;}
-a:hover {color: #c34352; text-decoration: none;}
-
-ul {padding: .5em 0em 1em 3.2em;}
-li {line-height: 30px; padding: 6px 0 0 0;}
-
-ol {padding: .5em 0em 0em 3.2em;}
-li {line-height: 30px; padding: 6px 0 0 0;}
-
-
-#content {max-width: 760px; margin:60px 14px 0 64px;}
-.entry strong {font-weight: bold; color: #555555;}
-
-small {font-size:13px;}
-
-img, video {
-	min-width: 100%;
-	max-width: 100%;
-	height: auto;
-	display: block;
-	-webkit-transition: .07s ease-in;
-	-moz-transition: .07s ease-in;
-	transition: .07s ease-in;
-	}
-
+	background:#fff;
+	font:18px "Lustria",serif;
+	color:#666;
+	line-height:30px;
+}
+h1 {
+	font-size:1.5em;
+	color:#333;
+	line-height:26px;
+	font-weight:normal;
+	padding:5px 0 10px 0;
+}
+h2 {
+	font-size:1em;
+	color:#666;
+	font-weight:normal;
+	padding:20px 0 0 0;
+}
+h3 {
+	font-size:18px;
+	color:#666;
+	line-height:15px;
+	text-indent:0;
+	padding:10px 0 0 0;
+}
+h4 {
+	font-size:1em;
+	color:#000000;
+}
+h5 {
+	font-size:9pt;
+	color:#000000;
+}
+img {
+	border:none;
+}
+img a {
+	text-decoration:none;
+	border:nones;
+}
+blockquote {
+	border-left:1px solid #A5ABAB;
+	margin:0;
+	padding:0 12px 0 12px;
+}
+p {
+	line-height:30px;
+	margin:30px auto;
+	text-indent:0;
+}
+a:link {
+	color:#000;
+	text-decoration:none;
+}
+a:visited {
+	color:#000;
+	text-decoration:none;
+}
+a:hover {
+	color:#336688;
+	text-decoration:none;
+}
+ul {
+	padding:.5em 0em 1em 3.2em;
+}
+li {
+	line-height:30px;
+	padding:6px 0 0 0;
+}
+ol {
+	padding:.5em 0em 0em 3.2em;
+}
+li {
+	line-height:30px;
+	padding:6px 0 0 0;
+}
+#content {
+	max-width:760px;
+	margin:60px 14px 0 64px;
+}
+time a:link {
+	color:#999;
+}
+.entry strong {
+	font-weight:bold;
+	color:#555555;
+}
+small {
+	font-size:13px;
+}
+img,video {
+	min-width:100%;
+	max-width:100%;
+	height:auto;
+	display:block;
+	-webkit-transition:.07s ease-in;
+	-moz-transition:.07s ease-in;
+	transition:.07s ease-in;
+}
 .gallery a img {
-	border: 0px !important;
-	margin: 0 0 -10px 0;
-	padding: 0 5px 0;
+	border:0 !important;
+	margin:0 0 -10px 0;
+	padding:0 5px 0;
+}
+#archives-wrap {
+	min-height:130px;
+}
+#archives-head {
+	margin-bottom:0;
+	color:#666;
+}
+.archive_col {
+	float:left;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	width:33%;
+}
+.clear,.gallery br {
+	clear:both !important;
+	margin:0;
+	padding:0;
+}
+#footer {
+	margin:10px 0 10px 64px
+}
+#footer {
+	background:#fff;
+	clear:both;
+}
+#footer p {
+	padding:4px 0;
+	margin:0;
+	color:#666;
+	font-size:14px;
+}
+@media only screen {
+	html {
+	-webkit-text-size-adjust:none;
 	}
-
-	#archives-wrap {
-		min-height: 130px;
+}
+@media only screen and (max-width:767px) {
+	#content,#footer {
+	max-width:767px;
+	margin:60px auto 0 auto;
+	padding:0 10px;
 	}
-	#archives-head {
-		margin-bottom: 0;
-		color: #666;
+	#footer {
+	margin:10px auto;
+	padding:0 10px;
 	}
-	.archive_col {
-		float: left;
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		width: 33%;
-	}
-	.clear, .gallery br {
-  		clear: both !important;
-  		margin: 0;
-  		padding: 0;
-	}
-
-#footer {margin:10px 0 10px 64px}
-#footer {background:#fff; clear: both;}
-#footer p {padding:4px 0;margin: 0; color: #666; font-size:14px;}
+}
+}
+@media only screen and (max-width:500px) {
+body {
+	font:200 1.1em/30px "Lustria",serif;
+	text-align: left;
+}
+}
