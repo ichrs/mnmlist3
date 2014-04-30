@@ -4,7 +4,7 @@
  * @subpackage mnmlist
  */
 /*
-Template Name: allposts
+Template Name: Allposts
 */
 ?>
 

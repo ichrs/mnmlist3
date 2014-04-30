@@ -91,10 +91,4 @@ function register_my_menus() {
         )
     );
 }
-function custom_submit_text($content) {
-	$before = 'Submit';
-	$after = 'Continue';
-	$content = str_replace($before, $after, $content);
-	return $content;
-}
 ?>

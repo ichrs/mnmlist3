@@ -7,22 +7,21 @@ Template Name: Archives Page
 	<div id="content">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		<div class="post">
-		<h2><a href="/"><?php bloginfo('name'); ?></a> : <strong><?php the_title(); ?></strong></h2>
-			<h1>Recent Posts</h1>
+		<h1><a href="/"><?php bloginfo('name'); ?></a> : <strong><?php the_title(); ?></strong></h1>
+			<h3>Recent Posts</h3>
 			<?php $posts = get_posts( "days=7" ); ?>
 			<?php if( $posts ) : ?>
 			<?php foreach( $posts as $post ) : setup_postdata( $post ); ?>
-			<?php the_time('m.d.Y'); ?> - 
-			<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a><br />
+			<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a> - <?php the_time('F j, Y'); ?><br />
 			<?php endforeach; ?>
 			<?php endif; ?>
 
-			<h1>Archives by Month</h1>
+			<h3>Archives by Month</h3>
 			<div id="archives-wrap"><?php if (function_exists(archivecolumns)) : archivecolumns(); endif; ?></div>
 			<div class="clear"style="margin-bottom: 20px;"></div>
 	<?php endwhile; ?>
 	<?php else : ?>
-			<h2>No matching results.</h2>
+			<h1<a href="/"><?php bloginfo('name'); ?></a> : <strong>>No matching results</strong></h1>
 			<p>You're on the wrong side of town.</p> 
 			<p><a href="<?php echo get_settings('home'); ?>">Return to homepage.</a></p>
 	<?php endif; ?>

@@ -2,7 +2,7 @@
 
 	<div id="content">
 		<div class="post" id="post-<?php the_ID(); ?>">
-			<h2><a href="/"><?php bloginfo('name'); ?></a> : <strong><?php the_title(); ?></strong></h2>
+			<h1><a href="/"><?php bloginfo('name'); ?></a> : <strong><?php the_title(); ?></strong></h1>
 
 			<div class="entry">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -11,7 +11,7 @@
 			</div>
 		</div>				
 		<?php endwhile; endif; ?>
-	<small><?php edit_post_link('Edit', '<p>', '</p>'); ?></small>
+	<?php edit_post_link('Edit', '<p><small>', '</small></p>'); ?>
 	</div>
 
 <?php get_footer(); ?>
