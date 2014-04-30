@@ -25,7 +25,11 @@ h1 {
 }
 h2 {
 	font-size:1em;
+<<<<<<< HEAD
 	color:#666;
+=======
+	color:#333;
+>>>>>>> FETCH_HEAD
 	font-weight:normal;
 	padding:20px 0 0 0;
 }
@@ -62,16 +66,28 @@ p {
 	text-indent:0;
 }
 a:link {
+<<<<<<< HEAD
 	color:#000;
 	text-decoration:none;
 }
 a:visited {
 	color:#000;
+=======
+	color:#336688;
+	text-decoration:none;
+}
+a:visited {
+	color:#666;
+>>>>>>> FETCH_HEAD
 	text-decoration:none;
 }
 a:hover {
 	color:#336688;
+<<<<<<< HEAD
 	text-decoration:none;
+=======
+	text-decoration:underline;
+>>>>>>> FETCH_HEAD
 }
 ul {
 	padding:.5em 0em 1em 3.2em;
@@ -169,4 +185,8 @@ body {
 	font:200 1.1em/30px "Lustria",serif;
 	text-align: left;
 }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> FETCH_HEAD

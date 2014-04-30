@@ -26,7 +26,6 @@ Change the link at the bottom to include your RSS or email subscription url or p
 
 <h1><b><a href="http://mnmlist.com/feeds/">subscribe</a></b></h1>
 
-
 - Footer
 Right now, there's an "uncopyright" link, but it will go to my uncopyright page. Create your own, or put a copyright notice here, or whatever links you want. I also have links that say "more" and "less", but you can change these to whatever links you want -- perhaps your about page, contact page, or whatever.
 
