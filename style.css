@@ -17,17 +17,17 @@ body {
 	line-height:30px;
 }
 h1 {
-	font-size:1em;
-	color:#333;
-	font-weight:normal;
-	padding:20px 0 0 0;
-}
-h2 {
 	font-size:1.5em;
 	color:#333;
 	line-height:26px;
 	font-weight:normal;
 	padding:5px 0 10px 0;
+}
+h2 {
+	font-size:1em;
+	color:#333;
+	font-weight:normal;
+	padding:20px 0 0 0;
 }
 h3 {
 	font-size:18px;
@@ -62,16 +62,16 @@ p {
 	text-indent:0;
 }
 a:link {
-	color:#000;
+	color:#336688;
 	text-decoration:none;
 }
 a:visited {
-	color:#333;
+	color:#666;
 	text-decoration:none;
 }
 a:hover {
-	color:#c34352;
-	text-decoration:none;
+	color:#336688;
+	text-decoration:underline;
 }
 ul {
 	padding:.5em 0em 1em 3.2em;
@@ -90,6 +90,9 @@ li {
 #content {
 	max-width:760px;
 	margin:60px 14px 0 64px;
+}
+time a:link {
+	color:#999;
 }
 .entry strong {
 	font-weight:bold;
